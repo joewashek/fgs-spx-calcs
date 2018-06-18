@@ -1,6 +1,6 @@
-## simple-web-part
+## FAST Global Solutions - SharePoint Framework Starter
 
-This is where you include your WebPart documentation.
+This template can be used to as starter for creating webparts for the FGS SharePoint site.
 
 ### Building the code
 
