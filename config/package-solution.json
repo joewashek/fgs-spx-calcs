@@ -1,12 +1,13 @@
 {
   "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "simple-web-part-client-side-solution",
+    "name": "calculators-converters-web-part-solution",
     "id": "814245db-b0ac-403f-8ac7-cc017b76557b",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
   },
   "paths": {
-    "zippedPackage": "solution/simple-web-part.sppkg"
+    "zippedPackage": "solution/calc-convert-web-part.sppkg"
   }
 }

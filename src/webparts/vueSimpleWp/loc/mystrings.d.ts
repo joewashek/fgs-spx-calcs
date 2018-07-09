@@ -1,10 +1,10 @@
-declare interface IVueSimpleWpWebPartStrings {
+declare interface ICalculatorsWebPartStrings {
   PropertyPaneDescription: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
 }
 
-declare module 'VueSimpleWpWebPartStrings' {
-  const strings: IVueSimpleWpWebPartStrings;
+declare module 'CalculatorsWebPartStrings' {
+  const strings: ICalculatorsWebPartStrings;
   export = strings;
 }

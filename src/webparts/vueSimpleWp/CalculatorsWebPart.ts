@@ -4,20 +4,26 @@ import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
-import { escape } from '@microsoft/sp-lodash-subset';
+import { SPComponentLoader } from '@microsoft/sp-loader';
 
-//import styles from './VueSimpleWpWebPart.module.scss';
-import * as strings from 'VueSimpleWpWebPartStrings';
+import * as strings from 'CalculatorsWebPartStrings';
 
-export interface IVueSimpleWpWebPartProps {
+export interface ICalculatorsWebPartProps {
   description: string;
 }
 
 import Vue from 'vue';
-import SimpleWebPartComponent from './components/SimpleWebPart/SimpleWebPart.vue';
 
+import './plugins/vuetify.js';
 
-export default class VueSimpleWpWebPart extends BaseClientSideWebPart<IVueSimpleWpWebPartProps> {
+import MainComponent from './components/Main.vue';
+
+export default class VueSimpleWpWebPart extends BaseClientSideWebPart<ICalculatorsWebPartProps> {
+
+  protected onInit(): Promise<void> {
+    SPComponentLoader.loadCss('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
+    return super.onInit();
+  }
 
   public render(): void {
     const id: string = `wp-${this.instanceId}`;
@@ -25,8 +31,8 @@ export default class VueSimpleWpWebPart extends BaseClientSideWebPart<IVueSimple
 
     let el = new Vue({
       el: `#${id}`,
-      render: h => h(SimpleWebPartComponent, {
-        props: {
+      render: h => h(MainComponent,{
+        props:{
           description: this.properties.description
         }
       })

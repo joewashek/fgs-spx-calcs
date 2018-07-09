@@ -1,6 +1,6 @@
-## FAST Global Solutions - SharePoint Framework Starter
+## FAST Global Solutions - SPX - Calculators and Converters
 
-This template can be used to as starter for creating webparts for the FGS SharePoint site.
+This is a webpart for calculators and converters that are frequently used at FGS.
 
 ### Building the code
 

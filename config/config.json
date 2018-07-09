@@ -5,14 +5,14 @@
     "vue-simple-wp-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/vueSimpleWp/VueSimpleWpWebPart.js",
-          "manifest": "./src/webparts/vueSimpleWp/VueSimpleWpWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/vueSimpleWp/CalculatorsWebPart.js",
+          "manifest": "./src/webparts/vueSimpleWp/CalculatorsWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "VueSimpleWpWebPartStrings": "lib/webparts/vueSimpleWp/loc/{locale}.js"
+    "CalculatorsWebPartStrings": "lib/webparts/vueSimpleWp/loc/{locale}.js"
   }
 }

@@ -25,7 +25,8 @@ build.configureWebpack.mergeConfig({
                             esModule: true,
                         }
                     }]
-                }]
+                }
+            ]
             }
         });
     }
